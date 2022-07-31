@@ -15,7 +15,7 @@ int main() {
 
 	mt19937 rnd((unsigned int)chrono::steady_clock::now().time_since_epoch().count());
 	uniform_int_distribution<int> uuid(1,9);
-	return uuid(rnd);
+	uuid(rnd);
 
 	int a;
 	cin >> a;
