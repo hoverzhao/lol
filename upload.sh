@@ -1,6 +1,7 @@
 #!/bin/bash
-cd /home/hover/github/lol
-git add /home/hover/github/lol/
+ppp=$HOME/github/lol/
+cd $ppp
+git add $ppp
 git commit -m "x"
 git push origin main
 
