@@ -16,6 +16,8 @@ nmap <f8> :call Winshow() <cr>
 nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
 let g:termdebug_wide=10
 
+nmap <f2> :exec "!ln -s % a.cpp" <cr>
+
 let mapleader = " "
 inoremap jk <esc>
 
