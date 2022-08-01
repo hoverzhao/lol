@@ -37,3 +37,5 @@
 #lol
 *.in
 *.out
+
+a.DSYM
