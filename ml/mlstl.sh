@@ -1,4 +1,40 @@
 #!/bin/sh
+mlt raw "sort(a.begin(), a.end(), greater<int>()); "
+
+# vector<pair<string, pair<int, int> > > vsii;
+mlt raw "auto p = make_pair(x, y); "
+mlt raw "V.emplace_back(a, b); "
+mlt raw "for (auto x : V) {\r}\x1Bko x.first = x.second; "
+
+# map
+mlt raw "m.insert(make_pair(x, y)); "
+mlt raw "m[a] = b; "
+mlt raw "((it = find(x)) != m.end()) ? it->second : -1; "
+mlt raw " for (auto a : m) {\r}\x1Bko a.first a.second; "
+
+#stack
+mlt raw "s.push(); s.pop(); int a = s.top(); s.empty(); "
+
+#queue
+mlt raw "q.push(); s.pop(); s.front(); s.back(); s.empty(); "
+
+#set
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # mlt raw " cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwfww cwf cwf cwfw cwf cwf cwf cwf cwfw cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cwf cww cwf cwf cwfw cwf cwf cwf cwf cwfw"
 
 #array------------------------------------------------------------
