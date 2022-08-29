@@ -1,4 +1,6 @@
 set nu ru rnu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
+"syntax on
+"colorscheme solarized
 nmap <f9> :w!<cr> :!g++ % -o %< -Wall -lm -g  <cr> :!./%< <cr>
 function! Winshow()
 	let nno = expand("%:r") . ".out"
@@ -30,3 +32,4 @@ au BufNewFile *.cpp 0r ~/skeleton.c | %s/xxx/\=expand("%:r")/g
 "ulimit -s unlimited
 "setxkbmap -option ctrl:swapcaps
 "setxkbmap -option
+"chmod +x dp.sh
