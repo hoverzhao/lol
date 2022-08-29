@@ -1,6 +1,6 @@
 set nu ru rnu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
 syntax on
-colorscheme solarized
+colo solarized
 func! Winshow()
 	let nno = expand("%:r") . ".out"
 	let nni = expand("%:r") . ".in"
