@@ -38,4 +38,4 @@
 *.in
 *.out
 
-a.DSYM
+*.dSYM
