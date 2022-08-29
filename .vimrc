@@ -1,7 +1,6 @@
 set nu ru rnu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
-"syntax on
-"colorscheme solarized
-nmap <f9> :w!<cr> :!g++ % -o %< -Wall -lm -g  <cr> :!./%< <cr>
+syntax on
+colorscheme solarized
 function! Winshow()
 	let nno = expand("%:r") . ".out"
 	let nni = expand("%:r") . ".in"
@@ -14,6 +13,7 @@ function! Winshow()
 		exec "resize 10"
 	endif
 endfunction
+nmap <f9> :w!<cr> :!g++ % -o %< -std=c++14 -Wall -lm -g  <cr> :!./%< <cr>
 nmap <f8> :call Winshow() <cr>
 nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
 let g:termdebug_wide=10
