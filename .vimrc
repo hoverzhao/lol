@@ -1,5 +1,5 @@
 set nu ru rnu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
-nmap <f9> :w!<cr> :!g++ % -o %< -Wall -lm -g -fsanitize=undefined <cr> :!./%< <cr>
+nmap <f9> :w!<cr> :!g++ % -o %< -Wall -lm -g  <cr> :!./%< <cr>
 function! Winshow()
 	let nno = expand("%:r") . ".out"
 	let nni = expand("%:r") . ".in"
@@ -25,4 +25,8 @@ nnoremap <leader>w :w! <cr>
 nnoremap <leader>rc :e ~/.vimrc <cr>
 nnoremap <leader>rs :so ~/.vimrc <cr>
 
-:au BufNewFile *.cpp 0r ~/skeleton.c | %s/xxx/\=expand("%:r")/g
+au BufNewFile *.cpp 0r ~/skeleton.c | %s/xxx/\=expand("%:r")/g
+"#!/bin/bash
+"ulimit -s unlimited
+"setxkbmap -option ctrl:swapcaps
+"setxkbmap -option

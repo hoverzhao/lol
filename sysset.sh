@@ -1,3 +1,3 @@
 #!/bin/bash
-ulimit -S unlimited
-setxkbmap -option ctrl:nocaps
+ulimit -s unlimited
+setxkbmap -option ctrl:swapcaps
