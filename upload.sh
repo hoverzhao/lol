@@ -5,4 +5,5 @@ git add $ppp
 git commit -m "x"
 git push origin main
 cp ./.vimrc $HOME/.vimrc
+cp ./skeleton.c $HOME/skeleton.c
 
