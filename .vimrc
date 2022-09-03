@@ -15,10 +15,15 @@ func! Winshow()
 	endif
 endfunc
 
-nmap <f9> :w!<cr> :!g++ % -o %< -std=c++14 -g -lm -Wall -fsanitize=undefined<cr> :!./%< <cr>
+let $CXXFLAGS='-std=c++14 -g -lm -Wall -fsanitize=undefined'
+nmap <silent><F9> :w!<cr> :make %< <cr> :cw <cr> :!./%< <cr>
+
+"nmap <f9> :w!<cr> :!g++ % -o %< -std=c++14 -g -lm -Wall -fsanitize=undefined<cr> :!./%< <cr>
+
 nmap <f8> :call Winshow() <cr>
 nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
 let g:termdebug_wide=10
+
 
 nmap <f2> :exec "!ln -s % a.cpp" <cr>
 
