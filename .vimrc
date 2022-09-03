@@ -15,7 +15,7 @@ func! Winshow()
 	endif
 endfunc
 
-nmap <f9> :w!<cr> :!g++ % -o %< -std=c++14 -g -lm -Wall -fsanitize=undefined<cr> :!./%< <cr>
+nnoremap <f9> :w!<cr> :!g++ % -o %< -std=c++14 -g -lm -Wall -fsanitize=undefined<cr> :!./%< <cr>
 nmap <f8> :call Winshow() <cr>
 nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
 let g:termdebug_wide=10
