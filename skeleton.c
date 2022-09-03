@@ -12,6 +12,5 @@ static int x = []() {
 }();
 
 int main() {
-
 	return 0;
 }
