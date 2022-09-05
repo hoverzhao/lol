@@ -34,5 +34,5 @@ au BufNewFile *.cpp 0r ~/skeleton.c | %s/xxx/\=expand("%:r")/g
 "setxkbmap -option ctrl:swapcaps
 "setxkbmap -option
 "chmod +x dp.sh
-"colo solarized
+colo solarized
 "colo molokai
