@@ -1,7 +1,5 @@
 set nu ru rnu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
 syntax on
-"colo solarized
-"colo molokai
 func! Winshow()
 	let nno = expand("%:r") . ".out"
 	let nni = expand("%:r") . ".in"
@@ -41,3 +39,5 @@ au BufNewFile *.cpp 0r ~/skeleton.c | %s/xxx/\=expand("%:r")/g
 "setxkbmap -option ctrl:swapcaps
 "setxkbmap -option
 "chmod +x dp.sh
+"colo solarized
+"colo molokai
