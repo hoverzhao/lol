@@ -1,7 +1,9 @@
 set nu ru rnu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
 syntax on
+set undodir="~/.vim/undodir"
+set fileencoding=utf-8
 set bs=indent,eol,start
-"colo solarized
+colo solarized
 
 let mapleader = " "
 inoremap jk <esc>
@@ -29,8 +31,8 @@ nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
 let g:termdebug_wide=10
 nmap <f2> :exec "!ln -s % a.cpp" <cr>
 
-:au! BufNewFile *.cpp 0r ~/skeleton.c | %s/xxx/\=expand("%:r")/g
-
+au BufNewFile *.cpp 0r ~/skeleton.c | %s/xxx/\=expand("%:r")/g
+au FileType cpp set keywordprg=cppman
 "#!/bin/bash
 "ulimit -s unlimited
 "setxkbmap -option ctrl:swapcaps
